@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id"
+        content="932568607101-fj3c5p7oajdnuijhgvkujvobphltjl5j.apps.googleusercontent.com">
+
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/1ce8c6e3ee.js" crossorigin="anonymous"></script>
+
+
+    <script src="home.js"></script>
+    <script src="index.js"></script>
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <link rel="stylesheet" href="home.css">
+
+</head>
+
+<style>
+    .data1 {
+        display: none;
+    }
+
+    .g-signin2 {
+        position: absolute;
+        top: 52%;
+        left: 15%;
+        margin-top: -50px;
+        margin-left: -50px;
+        
+    }
+
+    #homepage img {
+        margin: -8px -10px;
+        height: 720px;
+        width: 100.6%;
+        /* position: relative; */
+    }
+
+    #contentImage  {
+        font-size: large;
+        margin: -550px 150px;
+    }
+  
+</style>
+
+<body>
+    <!-- <h2 class="alert alert-success">Sign-In With Google Using JavaScript</h2> -->
+    <div id="homepage">
+        <div id="sideImage">
+            <img src="https://images.designtrends.com/wp-content/uploads/2016/04/04071547/Travel-Wallpaper-Background.jpg"
+                alt="">
+            <!-- <div class="g-signin2" data-onsuccess="onSignIn"></div> -->
+            <div id="contentImage">
+                <h2>Welcome to Travelling</h2>
+            <p>Lorem ipsum dolor sit amet,  consect  icing elit. Tempora numquam possimus ipsum, rerum quo dssda
+                <br>expedita quisquam quae ab ratione facem asperiores.winder woill doit <br> Rolor dolorem Lorem, ipsum dolor..
+            </p>
+            <h3>To Explore More please Login or Signup</h3>
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            </div>
+        </div>
+
+    </div>
+    <header class="data1">
+        <div id="main">
+            <ul>
+                <li class="navbar"><a href="#">Review</a></li>
+                <li class="navbar"><a href="#">Destinations</a></li>
+                <li class="navbar"><a href="#">Pricing</a></li>
+                <li class="navbar"><a href="#">Contact</a></li>
+                <!-- <li ><a class="distance login" href="#">Login</a></li>
+                <li class="signup "><a  href="#">Sign Up</a></li> -->
+
+            </ul>
+            <div id="logsign">
+                <ul>
+                    <button id="loginButton" style="cursor: pointer;
+                    padding:5px 14px;background-color:black;color:white;    font-size: 20px;" class="logout"
+                        onMouseOver="this.style.color='black';this.style.backgroundColor='transparent'"
+                        onMouseOut="this.style.color='white';this.style.backgroundColor='black'"
+                        onclick="signOut()">Signout</button>
+                </ul>
+            </div>
+        </div>
+        <div id="company_name">
+
+            <li><img src="aeroplane.png" style="height: 45px;" alt=""><a href="#">Travelling <br>
+                    <p style="font-size: 13px;margin-left: 55px;margin-top: -15px;color: rgb(164, 218, 129);">World Best
+                        Travel Site </p>
+                </a></li>
+
+        </div>
+        <div id="content">
+            <h1>LIFE IS SHORT <br> AND WORLD <br> IS WIDE</h1> <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing. Nemo recusandae perspiciatis <br>
+                quidem aliquam voluptatem
+            </p>
+            <button onclick="explore()">Explore... <i class="fa fa-chevron-circle-right"
+                    aria-hidden="true"></i></button>
+            <button id="playVideo" onclick="play()">Play Video <i class="fa fa-play-circle"
+                    aria-hidden="true"></i></button>
+        </div>
+
+        <div id="blur">
+            <div id="sidebar">
+                <h1>
+                    What excites you <br> most ?
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet ghets <br> consetur adipisicing.
+                </p>
+            </div>
+            <div id="second_bar">
+                <img src="hiking.png" alt="">
+                <h2>Trekking</h2>
+                <p>Lorem ipsum dolor <br> adipisicing sint.
+                </p>
+            </div>
+            <div id="third_bar">
+                <img src="sea.png" alt="">
+                <h2>Windsurfing</h2>
+                <p>Lorem ipsum dolor <br> sint. <br> Lorem, ipsum dolor. </p>
+            </div>
+            <div id="fourth_bar">
+                <img src="rafting.png" alt="">
+                <h2>Rafting</h2>
+                <p>Lorem <br> adipisicing sint. <br> ipsum dolor. </p>
+            </div>
+        </div>
+        <div id="video">
+            <video id="autoplay"
+                poster="https://www.pixelstalk.net/wp-content/uploads/2015/05/Blue-Sea-Travel-Wallpapers-HD.jpg"
+                controls unmuted>
+                <source src="video.mp4" type="video/webm">
+
+            </video>
+        </div>
+        <div id="block">
+            <div id="cards">
+                <div class="card">
+                    <div class="cardImage card1"><img src=""></div>
+                    <h2>India</h2>
+                    <p>Lorem ipsum lor sit amet consectetur adipisicing elit. Ullam, vero! adipisicing
+                        elit. Illo porro ut mollitia nesciunt
+                        accusantium! Quis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, laborum?
+                    </p>
+                    <button class="readMore">Read More <i class="fa fa-external-link" aria-hidden="true"></i></button>
+                </div>
+                <div class="card">
+                    <div class="cardImage card2"><img src=""></div>
+                    <h2>Singapore</h2>
+                    <p>Lorem ipsum dolor sit adipisicing elit. Illo porro ut mollitia nesciunt
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem nemo illum, laudantium
+                        iste
+                        adipisicing elit.</p>
+                    <button class="readMore">Read More <i class="fa fa-external-link" aria-hidden="true"></i></button>
+                </div>
+                <div class="card">
+                    <div class="cardImage card3"><img src=""></div>
+                    <h2>Maldives</h2>
+                    <p>Lorem ipsum dolor sit adipisicing elit. consectetur adipisicing
+                        elit. Necessitatibus esse deleniti molestias expedita magni doloribus incidunt nulla dignissimos
+                        error.
+                        mollitia nesciunt
+                        accusantium! Quis!</p>
+                    <button class="readMore">Read More <i class="fa fa-external-link" aria-hidden="true"></i></button>
+                </div>
+            </div>
+            <div id="exit" onclick="exitCard()">
+                <i style="color: white;" class="fa fa-times-circle-o fa-2x" aria-hidden="true"></i>
+            </div>
+        </div>
+
+        </div>
+
+
+    </header>
+</body>
+
+</html>
